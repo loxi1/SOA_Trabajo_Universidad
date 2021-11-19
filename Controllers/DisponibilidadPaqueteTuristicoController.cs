@@ -32,22 +32,10 @@ namespace WebApi.Controllers
             return Ok(result);
         }
 
-        [HttpGet("VerInformacionGeneral")]
-        public IEnumerable<PaquetesInformaciondt> VerInformacionGeneral(int id)
+        [HttpGet("DisponibilidadPaqueteTuristico")]
+        public DisponiblePaquetedt DisponibilidadPaqueteTuristico(int idp, DateTime fechareserva, int numper)
         {
-            return PaquetesInformacion.VerInformacionGeneral(id);
-        }
-
-        [HttpGet("VerGaleriaFotos")]
-        public IEnumerable<Galeriadt> VerGaleriaFotos(int id)
-        {
-            return Galeria.VerGaleriaFotos(id);
-        }
-
-        [HttpGet("VerPaqueteTuristico")]
-        public PaquetesTuristicodt VerPaqueteTuristico(int id)
-        {
-            return PaquetesTuristico.VerPaqueteTuristico(id);
+            return PaquetesTuristico.DisponibilidadPaqueteTuristico(idp, fechareserva, numper);
         }
 
         [HttpGet("ListarPaquetesSugeridos")]
@@ -56,16 +44,22 @@ namespace WebApi.Controllers
             return PaquetesTuristico.ListarPaquetesSugeridos(idpais, idcat);
         }
 
-        [HttpGet("listarxxx")]
-        public PaquetesTuristicodt listarxxx(int id)
+        [HttpGet("VerPaqueteTuristico")]
+        public PaquetesTuristicodt VerPaqueteTuristico(int id)
         {
-            return PaquetesTuristico.listarxxx(id);
+            return PaquetesTuristico.VerPaqueteTuristico(id);
         }
 
-        [HttpGet("DisponibilidadPaqueteTuristico")]
-        public DisponiblePaquetedt DisponibilidadPaqueteTuristico(int idp, DateTime fechareserva, int numper)
+        [HttpGet("VerGaleriaFotos")]
+        public IEnumerable<Galeriadt> VerGaleriaFotos(int id)
         {
-            return PaquetesTuristico.DisponibilidadPaqueteTuristico(idp, fechareserva, numper);
+            return Galeria.VerGaleriaFotos(id);
+        }
+
+        [HttpGet("VerInformacionGeneral")]
+        public IEnumerable<PaquetesInformaciondt> VerInformacionGeneral(int id)
+        {
+            return PaquetesInformacion.VerInformacionGeneral(id);
         }
     }
 }

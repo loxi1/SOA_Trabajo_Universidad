@@ -54,3 +54,6 @@ C:\Users\enma_\source\repos\SOPLON\WebApi\obj\Debug\net5.0\WebApi.dll
 C:\Users\enma_\source\repos\SOPLON\WebApi\obj\Debug\net5.0\ref\WebApi.dll
 C:\Users\enma_\source\repos\SOPLON\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\enma_\source\repos\SOPLON\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+C:\Users\enma_\source\repos\SOPLON\WebApi\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\enma_\source\repos\SOPLON\WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\enma_\source\repos\SOPLON\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll

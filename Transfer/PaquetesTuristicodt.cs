@@ -15,5 +15,7 @@ namespace WebApi.Transfer
         public decimal? PrecioUnitario { get; set; }
         public decimal? TiempoDuracion { get; set; }
         public string UnidadDuracion { get; set; }
+        public int? favo { get; set; }
+        public ICollection<Favoritodt> Favoritos { get; set; }
     }
 }
